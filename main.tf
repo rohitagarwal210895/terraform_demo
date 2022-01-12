@@ -1,0 +1,19 @@
+module "java" {
+  source                = "./code"
+  instance_type         = var.instance_type
+  ami_id                = var.ami_id
+  target_value          = var.target_value
+  key_name              = var.key_name
+  server_port           = var.server_port
+  min_size              = var.min_size
+  max_size              = var.max_size
+  asg_policy_name       = var.asg_policy_name
+  asg_name              = var.asg_name
+  elb_name              = var.elb_name
+  launch_config_name    = var.launch_config_name
+  launch_config_sg_name = var.launch_config_sg_name
+  elb_sg_name           = var.elb_sg_name
+  healthy_threshold     = var.healthy_threshold
+  unhealthy_threshold   = var.unhealthy_threshold
+  s3_bucket             = var.s3_bucket
+}
