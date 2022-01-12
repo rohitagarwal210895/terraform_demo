@@ -54,7 +54,7 @@ sudo su
 yum update -y
 yum install httpd -y
 service httpd start
-echo -e "<h1> Hello ANZ Team \n Weclome to Terraform & CodeFresh Demo \n <h1>" > /var/www/html/index.html
+echo -e "<h1> Hello ANZ Team, Welcome to Terraform & CodeFresh Demo <h1>" > /var/www/html/index.html
 EOF
 
   lifecycle {
