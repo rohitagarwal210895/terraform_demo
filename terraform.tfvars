@@ -1,4 +1,4 @@
-region                = "us-east-1"
+region                = "us-west-1"
 key_name              = "protiviti-California"
 ami_id                = "ami-0d5075a2643fdf738"
 instance_type         = "t2.micro"
