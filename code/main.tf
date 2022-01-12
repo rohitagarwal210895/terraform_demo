@@ -48,16 +48,14 @@ resource "aws_launch_configuration" "Demo-lc" {
 
   #iam_instance_profile = var.iam_instance_profile
 
-  user_data = <<-EOF
-              #!/bin/bash
-              sudo su
-              yum update -y
-              yum install httpd -y
-              service httpd start
-              chkconfig httpd on
-              aws s3 cp "${var.s3_bucket}" /var/www/html/ --recursive
-              hostname -f >> /var/www/html/index.html
-              EOF
+  user_data = <<EOF
+#!/bin/bash
+sudo su
+yum update -y
+yum install httpd -y
+service httpd start
+echo "Hello welcome to terraform demo ANZ" > /var/www/html/index.html
+EOF
 
   lifecycle {
     create_before_destroy = true
