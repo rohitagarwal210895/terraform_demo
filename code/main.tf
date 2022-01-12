@@ -54,7 +54,7 @@ sudo su
 yum update -y
 yum install httpd -y
 service httpd start
-echo "Hello welcome to terraform demo ANZ" > /var/www/html/index.html
+echo -e "<h1> Hello ANZ Team \n Weclome to Terraform & CodeFresh Demo \n <h1>" > /var/www/html/index.html
 EOF
 
   lifecycle {
@@ -107,10 +107,6 @@ resource "aws_security_group" "Demo-lc-sg" {
     to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  lifecycle {
-    create_before_destroy = true
   }
 }
 
