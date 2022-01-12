@@ -1,7 +1,7 @@
-/*terraform {
+terraform {
   backend "s3" {
-    bucket = "testingpurpose123java"
+    bucket = "terraform-demo-test"
     key    = "path/terraform.tfstate"
     region = "us-west-1"
   }
-}*/
+}
