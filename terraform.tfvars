@@ -1,4 +1,5 @@
 region                = "us-west-1"
+//////
 key_name              = "test_demo"
 ami_id                = "ami-02d03ce209db75523"
 instance_type         = "t2.micro"
