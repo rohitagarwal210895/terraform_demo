@@ -5,6 +5,7 @@ pipeline {
             steps {
                 bat 'echo saredo'
                 
+                
             }
         }
         stage('terraform initialization') { 
